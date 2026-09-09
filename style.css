@@ -1,4 +1,17 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* Remove a margem */
+    padding: 0px; /* Remove o preenchimento */
+}
+
+body {
+    font-family: monospace; /* Define a fonte do corpo do documento */
+    background-color: #ffc5d3; /* Define a cor de fundo do corpo do documento */
+    color: #713600; /* Define a cor do texto do corpo do documento */
+}
+
+hr {
+    height: 3px; /* Define a altura da linha horizontal */
+    background-color: #713600; /* Define a cor de fundo da linha horizontal */
+    border: 1px solid #713600; /* Define a borda da linha horizontal */
+    margin: 20px 0px; /* Define a margem da linha horizontal */
 }
