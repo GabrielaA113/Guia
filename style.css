@@ -1,17 +1,43 @@
-* {
+* /* Define o estilo global do documento */ {
     margin: 0px; /* Remove a margem */
     padding: 0px; /* Remove o preenchimento */
 }
 
-body {
+body /* Define o estilo do corpo do documento */ {
     font-family: monospace; /* Define a fonte do corpo do documento */
-    background-color: #ffc5d3; /* Define a cor de fundo do corpo do documento */
+    background-color: #fdfbd4; /* Define a cor de fundo do corpo do documento */
     color: #713600; /* Define a cor do texto do corpo do documento */
 }
 
-hr {
-    height: 3px; /* Define a altura da linha horizontal */
+hr /* Define o estilo da linha horizontal */ {
+    height: 1px; /* Define a altura da linha horizontal */
     background-color: #713600; /* Define a cor de fundo da linha horizontal */
     border: 1px solid #713600; /* Define a borda da linha horizontal */
     margin: 20px 0px; /* Define a margem da linha horizontal */
+}
+
+.grupoComandos /* Define o estilo do grupo de comandos */ {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Define a direção dos itens como linha */
+    justify-content: space-between; /* Distribui os cartões de comando com espaço entre eles */
+    margin-inline: 15px; /* Define a margem horizontal da seção de comandos */
+    gap: 10px; /* Define o espaçamento entre os cartões de comando */
+}
+
+.cartaoComando /* Define o estilo do cartão de comando */ {
+    background-color: #ffffff; /* Define a cor de fundo do cartão */
+    border: 2px solid #713600; /* Define a borda do cartão */
+    border-radius: 25px; /* Define o raio da borda do cartão */
+    padding: 10px; /* Define o preenchimento interno do cartão */
+    transition: 150ms; /* Define a transição suave para todas as propriedades do cartão */
+    margin-inline: 10px; /* Define a margem externa do cartão */
+    width: 16.7%; /* Define a largura do cartão */
+}
+
+.cartaoComando:hover /* Define o estilo do cartão ao passar o mouse */{
+    scale: 110%; /* Aumenta o tamanho do cartão ao passar o mouse */
+    background-color: #F3E5AB; /* Define a cor de fundo do cartão ao passar o mouse */
+    transform: translateY(-5px); /* Move o cartão para cima ao passar o mouse */
+    border: 2px solid #713600; /* Define a borda do cartão ao passar o mouse */
+    box-shadow: 0px 0px 10px #713600; /* Define a sombra do cartão ao passar o mouse */
 }
