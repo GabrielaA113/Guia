@@ -19,10 +19,13 @@ hr /* Define o estilo da linha horizontal */ {
 .grupoComandos /* Define o estilo do grupo de comandos */ {
     display: flex; /* Define o layout como flexível */
     flex-direction: row; /* Define a direção dos itens como linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não houver espaço suficiente */
     justify-content: space-between; /* Distribui os cartões de comando com espaço entre eles */
     margin-inline: 15px; /* Define a margem horizontal da seção de comandos */
     gap: 10px; /* Define o espaçamento entre os cartões de comando */
 }
+
+
 
 .cartaoComando /* Define o estilo do cartão de comando */ {
     background-color: #ffffff; /* Define a cor de fundo do cartão */
@@ -31,7 +34,7 @@ hr /* Define o estilo da linha horizontal */ {
     padding: 10px; /* Define o preenchimento interno do cartão */
     transition: 150ms; /* Define a transição suave para todas as propriedades do cartão */
     margin-inline: 10px; /* Define a margem externa do cartão */
-    width: 16.7%; /* Define a largura do cartão */
+    width: calc(20% - 20px); /* Define a largura do cartão */
 }
 
 .cartaoComando:hover /* Define o estilo do cartão ao passar o mouse */{
