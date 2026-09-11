@@ -4,6 +4,7 @@
 }
 
 body /* Define o estilo do corpo do documento */ {
+    font-size: 25px; /* Define o tamanho da fonte do corpo do documento */
     font-family: monospace; /* Define a fonte do corpo do documento */
     background-color: #fdfbd4; /* Define a cor de fundo do corpo do documento */
     color: #713600; /* Define a cor do texto do corpo do documento */
