@@ -1,68 +1,131 @@
-<html lang="pt-BR"> <!-- Guia de Bolso Git -->
-
-<head> <!-- Cabeçalho da página -->
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
-    <title>Guia de Git para Iniciantes</title> 
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Git para Iniciantes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
- <body> <!-- Corpo da página -->
-    <header> <!-- Cabeçalho do conteúdo principal -->
-        <h1>Guia de Git para Iniciantes</h1> 
-
-    </header>
-
-    <main> <!-- Conteúdo principal da página -->
-     <h2>Comandos Essenciais</h2> 
-     
-      <section class=" grupoComandos"> <!-- Seção para agrupar os comandos essenciais do Git -->  
-     <div class="cartaoComando">  
-     <h3>git init</h3> <!-- Subtítulo do comando git init -->
-     <p>O comando git init é utilizado para inicializar um novo repositório Git em um diretório.</p> <!-- Parágrafo explicativo sobre o comando git init -->
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="brand-badge">☠</div>
+        <div>
+          <h1>Guia de Git <span>para Iniciantes</span> </h1>
+          <p>Aprenda os comandos essenciais do Git de forma simples e prática!</p>
+        </div>
       </div>
 
-      <div class="cartaoComando">
-     <h3>git add .</h3> <!-- Subtítulo do comando git add . -->
-        <p>O comando git add . é utilizado para adicionar todos os arquivos modificados e novos ao índice do Git, preparando-os para o próximo commit.</p> <!-- Parágrafo explicativo sobre o comando git add . -->
-        </div>
-
-        <div class="cartaoComando">
-     <h3>git commit -m "[Mensagem de Commit]"</h3> <!-- Subtítulo do comando git commit -m "[Mensagem de Commit]" -->
-        <p>O comando git commit -m "mensagem" é utilizado para criar um novo commit no repositório Git, registrando as alterações feitas nos arquivos adicionados ao índice, juntamente com uma mensagem descritiva.</p> <!-- Parágrafo explicativo sobre o comando git commit -m "[Mensagem de Commit]" -->
-        </div>
-        
-        <div class="cartaoComando">
-     <h3>git push -u origin main</h3> <!-- Subtítulo do comando git push -u origin main -->
-        <p>O comando git push -u origin main é utilizado para enviar as alterações locais para o repositório remoto, configurando o upstream.</p> <!-- Parágrafo explicativo sobre o comando git push -u origin main -->
-        </div>
-
-        <div class="cartaoComando">
-     <h3>git pull</h3> <!-- Subtítulo do comando git pull -->
-        <p>O comando git pull é utilizado para atualizar o repositório local com as alterações do repositório remoto, mesclando as mudanças.</p> <!-- Parágrafo explicativo sobre o comando git pull -->
-        </div>
-
-      <div class="cartaoComando">
-     <h3>git fetch</h3> <!-- Subtítulo do comando git fetch -->
-        <p>O comando git fetch é utilizado para buscar as alterações do repositório remoto sem mesclá-las automaticamente, permitindo revisar as mudanças antes de integrá-las ao repositório local.</p> <!-- Parágrafo explicativo sobre o comando git fetch -->
-      </div>
-
-      <div class="cartaoComando">
-     <h3>git branch</h3> <!-- Subtítulo do comando git branch -->
-        <p>O comando git branch é utilizado para criar, listar, renomear ou excluir ramos (branches) no repositório Git.</p> <!-- Parágrafo explicativo sobre o comando git branch -->
-      </div>
-
-      <div class="cartaoComando">
-     <h3>git clone [Link do Repositório]</h3> <!-- Subtítulo do comando git clone -->
-        <p>O comando git clone é utilizado para criar uma cópia local de um repositório Git existente.</p> <!-- Parágrafo explicativo sobre o comando git clone -->
-      </div>
+      <nav class="nav">
+        <a class="nav-link active" href="#inicio">⌂ <span>Início</span></a>
+        <a class="nav-link" href="#comandos">▤ <span>Comandos</span></a>
+        <a class="nav-link" href="#dica">♥ <span>Dicas</span></a>
+      </nav>
 
       
-    </section>
-   </main>
+      <img class="hero-kuromi" src="assets/kuromi/kuromi-aprender.png" alt="Ilustração decorativa">
+    </header>
 
-     <footer> <!-- Rodapé da página -->
-        <hr> <!-- Linha horizontal para separar o rodapé do conteúdo principal -->
-        <p>Dica: ['push'] é o comando para enviar alterações para o repositório remoto. E ['pull'] é o comando para atualizar o repositório local com as alterações do repositório remoto.</p> <!-- Parágrafo com uma dica sobre os comandos push e pull -->
+    <main id="inicio" class="content">
+      <section id="comandos">
+        <div class="section-heading">
+          <img src="assets/kuromi/kuromi-header.png" class="mini-kuromi" alt="">
+          <h2>Comandos Essenciais</h2>
+          <span class="rule"></span>
+          <span class="accent">♥ ✦</span>
+        </div>
 
-     </footer>
- </body>
+        <div class="cards-grid">
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git init</code></div>
+            <div class="card-main">
+              <p>Inicializa um novo repositório Git em um diretório.</p>
+              <img src="assets/kuromi/kuromi-init.png" alt="Ilustração para git init">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git add .</code></div>
+            <div class="card-main">
+              <p>Adiciona os arquivos modificados ao índice, preparando-os para o próximo commit.</p>
+              <img src="assets/kuromi/kuromi-add.png" alt="Ilustração para git add">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git commit -m</code></div>
+            <div class="card-main">
+              <p>Registra as alterações do projeto em um novo commit com uma mensagem.</p>
+              <img src="assets/kuromi/kuromi-commit.png" alt="Ilustração para git commit">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git push</code></div>
+            <div class="card-main">
+              <p>Envia as alterações do repositório local para o repositório remoto.</p>
+              <img src="assets/kuromi/kuromi-push.png" alt="Ilustração para git push">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git pull</code></div>
+            <div class="card-main">
+              <p>Baixa e integra as alterações do repositório remoto no repositório local.</p>
+              <img src="assets/kuromi/kuromi-pull.png" alt="Ilustração para git pull">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git fetch</code></div>
+            <div class="card-main">
+              <p>Busca alterações do remoto sem integrá-las automaticamente ao seu branch.</p>
+              <img src="assets/kuromi/kuromi-fetch.png" alt="Ilustração para git fetch">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git branch</code></div>
+            <div class="card-main">
+              <p>Cria, lista e gerencia branches dentro do seu repositório.</p>
+              <img class="wide-art" src="assets/kuromi/kuromi-branch.png" alt="Ilustração para git branch">
+            </div>
+          </article>
+
+          <article class="command-card">
+            <div class="command-title"><span>&gt;_</span><code>git clone</code></div>
+            <div class="card-main">
+              <p>Cria uma cópia local de um repositório remoto.</p>
+              <img class="wide-art" src="assets/kuromi/kuromi-clone.png" alt="Ilustração para git clone">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="dica" class="tip-box">
+        <div class="tip-character-wrap">
+          <img src="assets/kuromi/kuromi-dica.png" class="tip-character" alt="Ilustração decorativa">
+        </div>
+
+        
+        <div class="tip-copy">
+          <h3>Dica:</h3>
+          <p><code>push</code> envia suas alterações para o repositório remoto.</p>
+          <p><code>pull</code> traz para o computador as alterações que estão no remoto.</p>
+        </div>
+
+        <div class="tip-decor">✦ ♥ ☠ ♡</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="checker"></div>
+      <div class="footer-content"> <span>☠</span> Guia de Git para Iniciantes </div>
+    </footer>
+  </div>
+</body>
 </html>
