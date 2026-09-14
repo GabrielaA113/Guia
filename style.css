@@ -194,8 +194,11 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
   overflow: hidden;
   box-shadow: 6px 7px 0 rgba(43,26,60,.16);
 }
-.tip-character-wrap { position: relative; width: 175px; flex: 0 0 200px; height: 115px; }
-.tip-character { width: 115%; height: 120%; object-fit: contain; object-position: left bottom; }
+.tip-character-wrap { position: relative; width: 85vw; flex: 0 0 250px; height: 115px; display: flex;}
+.tip-character { width: 100%; align-self: center; justify-self: center; }
+
+.tip-character-wrap-2 { position: relative; width: 50vw; flex: 0 0 200px; height: 115px; display: flex;}
+.tip-character-2 { width: 100%; align-self: center; justify-self: center; } 
 .tip-bubble {
   position: absolute; top: -4px; right: 0;
   background: var(--pink-soft); color: var(--ink);
