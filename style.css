@@ -1,51 +1,51 @@
-:root {
-  --ink: #1b1323;
-  --dark: #2b1a3c;
-  --purple: #6e4a91;
-  --lavender: #f2e6fa;
-  --lavender-2: #dec8ef;
-  --pink: #ef8fca;
-  --pink-soft: #ffc9e8;
-  --white: #ffffff;
+:root /* Definir variáveis de cor para manter a consistência do tema em todo o site */{
+  --ink: #1b1323; /* Roxo escuro/preto */
+  --dark: #2b1a3c;  /* Roxo escuro */
+  --purple: #6e4a91; /* Roxo */
+  --lavender: #f2e6fa; /* Lavanda clara */
+  --lavender-2: #dec8ef;  /* Lavanda um pouco mais escura */
+  --pink: #ef8fca; /* Rosa claro */
+  --pink-soft: #ffc9e8;  /* Rosa suave */
+  --white: #ffffff; /* Branco */
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  min-height: 100vh;
-  font-family: "Fredoka", sans-serif;
-  color: var(--ink);
-  background-color: #d7bee9;
-  background-image: radial-gradient(circle, rgba(110,74,145,.16) 2px, transparent 2px);
-  background-size: 24px 24px;
+* { box-sizing: border-box;  margin: 0; padding: 0; /* Redefinir box-sizing e remover margem/padding padrão */}
+html  { scroll-behavior: smooth; /* Rolagem suave para links âncoras */ }
+body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
+  min-height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+  font-family: "Fredoka", sans-serif; /* Use uma fonte limpa e arredondada para um visual amigável */
+  color: var(--ink); /* Definir a cor de texto padrão para roxo escuro/preto */
+  background-color: #d7bee9; /* Fundo lavanda claro para uma sensação suave e acolhedora */
+  background-image: radial-gradient(circle, rgba(110,74,145,.16) 2px, transparent 2px); /* Gradiente radial sutil para um fundo texturizado */
+  background-size: 24px 24px; /* Tamanho do padrão de gradiente radial */
 }
 
-.page-shell {
-  width: min(1500px, 96%);
-  margin: 18px auto;
-  background: var(--lavender);
-  border: 3px solid var(--ink);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 0 rgba(27,19,35,.15), 0 24px 50px rgba(60,35,75,.16);
+.page-shell /* Container principal que envolve todo o conteúdo da página */ {
+  width: min(1500px, 96%); /* Largura máxima de 1500px ou 96% da largura da tela, o que for menor */
+  margin: 18px auto; /* Centralizar horizontalmente com margem superior/inferior de 18px */
+  background: var(--lavender); /* Fundo lavanda clara para contraste com o conteúdo */
+  border: 3px solid var(--ink); /* Borda roxa escura/preta para definir o contorno do container */
+  border-radius: 18px; /* Bordas arredondadas para um visual mais suave */
+  overflow: hidden; /* Garantir que o conteúdo não ultrapasse os limites do container */
+  box-shadow: 0 8px 0 rgba(27,19,35,.15), 0 24px 50px rgba(60,35,75,.16); /* Sombra para dar profundidade e destaque ao container */
 }
 
-.hero {
-  position: relative;
-  min-height: 190px;
-  padding: 28px 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  color: var(--white);
-  background: linear-gradient(135deg, #281832 0%, #4c2a63 100%);
-  border-bottom: 5px solid var(--pink);
-  overflow: hidden;
+.hero /* Seção de destaque no topo da página, geralmente usada para introdução ou chamada à ação */ {
+  position: relative; /* Permitir posicionamento absoluto de elementos filhos, como imagens ou balões de fala */
+  min-height: 190px; /* Garantir que a seção tenha altura mínima para acomodar o conteúdo */
+  padding: 28px 34px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 24px; 
+  color: var(--white); 
+  background: linear-gradient(135deg, #281832 0%, #4c2a63 100%); 
+  border-bottom: 5px solid var(--pink); 
+  overflow: hidden; 
 }
 
 
-.hero-copy { position: relative; z-index: 3; display: flex; align-items: center; gap: 16px; max-width: 760px; }
+.hero-copy { position: relative; z-index: 3; display: flex; align-items: center; gap: 16px; max-width: 760px;  }
 
 .section-icon {
     width: 45px;
@@ -231,7 +231,7 @@ body {
   .tip-box { flex-wrap: wrap; }
   .tip-decor { display: none; }
 }
-@media (max-width: 650px) {
+@media  (max-width: 650px) {
   .page-shell { width: 100%; margin: 0; border-radius: 0; }
   .hero { min-height: 165px; }
   .hero-copy { justify-content: center; text-align: center; }
