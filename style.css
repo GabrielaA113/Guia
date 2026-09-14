@@ -48,8 +48,8 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
 .hero-copy { position: relative; z-index: 3; display: flex; align-items: center; gap: 16px; max-width: 760px;  }
 
 .section-icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
@@ -110,8 +110,8 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
 
 .hero-kuromi {
   position: absolute;
-  right: 10px;
-  bottom: -20px;
+  right: 0px; 
+  bottom: 0px;
   z-index: 4;
   width: 185px;
   height: 195px;
@@ -194,8 +194,8 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
   overflow: hidden;
   box-shadow: 6px 7px 0 rgba(43,26,60,.16);
 }
-.tip-character-wrap { position: relative; width: 175px; flex: 0 0 175px; height: 115px; }
-.tip-character { width: 115%; height: 115%; object-fit: contain; object-position: left bottom; }
+.tip-character-wrap { position: relative; width: 175px; flex: 0 0 200px; height: 115px; }
+.tip-character { width: 115%; height: 120%; object-fit: contain; object-position: left bottom; }
 .tip-bubble {
   position: absolute; top: -4px; right: 0;
   background: var(--pink-soft); color: var(--ink);
@@ -204,9 +204,9 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
 }
 .tip-icon { font-size: 38px; flex: 0 0 auto; }
 .tip-copy { flex: 1; }
-.tip-copy h3 { display: inline; color: var(--pink-soft); font-size: 28px; margin-right: 5px; }
+.tip-copy h3 { display: inline; color: var(--pink-soft); font-size: 30px; margin-right: 7px; }
 .tip-copy p { display: inline; font-size: 15px; line-height: 1.55; }
-.tip-copy p + p { display: block; margin-top: 4px; }
+.tip-copy p + p { display: block; margin-top: 10px; }
 .tip-copy code { background: var(--pink-soft); color: var(--ink); padding: 3px 7px; border-radius: 6px; font: 700 13px "JetBrains Mono", monospace; }
 .tip-decor { color: var(--pink); font-size: 24px; white-space: nowrap; }
 
