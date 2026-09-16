@@ -247,3 +247,7 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
   .tip-box { flex-direction: column; text-align: center; }
   .tip-copy h3 { display: block; margin: 0 0 4px; }
 }
+
+#musica-site {
+    display: none;
+}
