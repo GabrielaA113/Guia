@@ -248,6 +248,3 @@ body /* Estilizar o corpo da página com cores, fontes e altura mínima */ {
   .tip-copy h3 { display: block; margin: 0 0 4px; }
 }
 
-#musica-site {
-    display: none;
-}
